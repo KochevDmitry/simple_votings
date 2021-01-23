@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add voting</title>
+</head>
+<body>
+  <h1>Добавление голосования</h1>
+  <hr>
+      {% include 'base/menu.html' %}
+        <hr>
+  <form action="" method="get">
+    <p><input type="text" name="name"> Название</p>
+    <p><input type="text" name="info"> Информация</p>
+    <p><input type="text" name="label1"> Поле для выбора 1</p>
+    <p><input type="text" name="label2"> Поле для выбора 2</p>
+    <p><input type="text" name="label3"> Поле для выбора 3</p>
+    <input type="submit" value="Добавить">
+  </form>
+  <hr>
+  <h3>{{ message }}</h3>
+</body>
+</html>

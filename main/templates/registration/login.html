@@ -1,0 +1,18 @@
+<h1>Авторизация</h1>
+<hr>
+
+<form method="POST" action="/login/">
+    {% csrf_token %}
+
+    {% for item in form %}
+        <label>{{ item.label }}:</label><br>
+        {{ item }}
+    {% endfor %}
+
+    <input type="submit" value="Войти">
+</form>
+
+{% if form.errors %}
+    {{ form.errors }}
+{% endif %}
+

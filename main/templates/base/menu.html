@@ -1,0 +1,10 @@
+<nav>
+    <a href="/">Главная</a> | <a href="/votings/">Список голосований</a>
+
+
+    {% if request.user.is_authenticated %}
+        <p>Пользователь: {{request.user}} | <a href="/logout">Выйти</a></p>
+    {% else %}
+        <p>Пользователь: {{request.user}} | <a href="/login">Войти</a></p>
+    {% endif %}
+</nav>

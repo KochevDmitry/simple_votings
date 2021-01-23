@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+  <h2>Результаты голосования</h2>
+  {%for elem in res%}
+    <p>{{elem.0}}: {{elem.1}}</p>
+  {%endfor%}
+</body>
+</html>

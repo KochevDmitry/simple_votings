@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>votings</title>
+</head>
+<body>
+    <h1><a href="/add_voting">Создать голосование</a> </h1>
+    <h1>Существующие голосования</h1>
+    <hr>
+    {% for vot in votings%}
+      <p><a href="/voting_info/?id={{ vot.id }}" >{{ vot.voting_name }}</a></p>
+    {% endfor %}
+</body>
+</html>
